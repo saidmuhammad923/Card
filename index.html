@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Корзина товаров</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1 class="title">Список товаров</h1>
+   <div id="cart">
+  <h4 class="h4__title">Корзина</h4>  
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Сумма: <span id="total-amount">0</span> рублей</p>
+    <button id="checkout-btn">Заказать</button>
+  </div>
+  <div class='cards'>
+  <div id="products">
+    <h2 class="h3__title">Товары:</h2>
+    <ul id="product-list">
+    <div class="card"> 
+      <li data-id="1" data-price="100">
+        <img src="/Scr/Без названия.png" alt="нет" srcset="" class="img-product">
+      <span>Карандаш - 100 рублей</span>
+      <button class="plus-to-cart-btn" data-action="plus">+</button>
+      <span data-counter="1">0</span>
+      <button class="minus-to-cart-btn" data-action="minus">-</button>
+    </li>
+  
+  </div>
+      <div class="card2">
+        <li data-id="2" data-price="200">
+          <img data-img="img" src="/Scr/1587460647864.jpg" alt="нет" srcset="" class="img-product">
+          <span>Ластик - 200 рублей</span>
+          <button class="plus-to-cart-btn" data-action="plus2">+</button>
+          <span data-counter="2">0</span>
+          <button class="minus-to-cart-btn" data-action="minus2">-</button>
+        </li>
+      </div>
+      <div class="card3">
+        <li data-id="3" data-price="300">
+          <img src="/Scr/1597490210492.jpg" alt="нет" srcset="" class="img-product">
+          <span>Тетрадь - 300 рублей</span>
+          <button class="plus-to-cart-btn" data-action="plus3">+</button>
+          <span data-counter="3">0</span>
+          <button class="minus-to-cart-btn" data-action="minus3">-</button>
+        </li>
+      </div>
+   </ul>
+  </div>
+</div>
+</div>
+   <script src="script.js"></script>
+</body>
+</html>
